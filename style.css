@@ -4,10 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   height: 100vh;
-  background: linear-gradient(#f3f3fb 50%, #377dff 50%);
+  background: linear-gradient(to bottom, #f3f3fb 40%, #377dff 100%);
 }
+
 .wrapper {
   background-color: #ffffff;
   padding: 5em 4em;
@@ -16,9 +18,10 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  border-radius: 0.6em;
-  box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+  border-radius: 1em;
+  box-shadow: 0 2em 5em rgba(3, 21, 55, 0.2);
 }
+
 #userInput {
   width: 100%;
   border: none;
@@ -27,12 +30,14 @@ body {
   font-size: 1em;
   outline: none;
 }
+
 .options {
   margin-top: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 select {
   appearance: none;
   width: 8em;
@@ -50,9 +55,11 @@ select {
   outline: none;
   border-radius: 0.3em;
 }
+
 select::-ms-expand {
   display: none;
 }
+
 select option {
   background-color: #ffffff;
   color: #377dff;
@@ -60,9 +67,11 @@ select option {
   font-weight: 400;
   font-size: 1.12em;
 }
+
 .selected {
   display: none;
 }
+
 .color-inp {
   appearance: none;
   background-color: transparent;
@@ -71,19 +80,29 @@ select option {
   outline: none;
   border: none;
 }
+
 .color-inp::-webkit-color-swatch {
   border-radius: 0.3em;
   border: 0.18em solid #191f3f;
 }
+
 .color-inp::-moz-color-swatch {
   border-radius: 0.3em;
   border: 0.18em solid #191f3f;
 }
+
+.color-inp:hover {
+  cursor: pointer;
+  border: 0.18em solid #377dff;
+  transition: 0.2s ease-in-out;
+}
+
 .box {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
 .box button,
 .box a {
   font-size: 1em;
@@ -91,27 +110,47 @@ select option {
   border-radius: 0.5em;
   margin-top: 2em;
 }
+
 .box button:disabled {
   background-color: transparent;
   color: #a3aab6;
   border: 0.18em solid #a3aab6;
 }
+
 .box button {
   background-color: transparent;
   color: #377dff;
   border: 0.18em solid #377dff;
 }
+
+.box button:hover {
+  background-color: #377dff;
+  color: #ffffff;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
 .box a {
   background-color: #377dff;
   color: #ffffff;
   text-decoration: none;
   border: 0.18em solid #377dff;
 }
+
+.box a:hover {
+  background-color: transparent;
+  color: #377dff;
+  border: 0.18em solid #377dff;
+  transition: 0.3s ease-in-out;
+}
+
 .container {
   display: flex;
   justify-content: center;
   margin-top: 1.8em;
 }
+
 .hide {
   display: none;
 }
+
